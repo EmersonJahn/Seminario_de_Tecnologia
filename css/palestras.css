@@ -1,0 +1,15 @@
+
+.titulo-palestras {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.titulo-palestra-mobile {
+    font-weight: bold;
+}
+
+.linha-palestra {
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
