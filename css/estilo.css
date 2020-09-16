@@ -1,7 +1,11 @@
-.cabecalho {
-
+.footer {
+    position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.titulo {
-    text-align: center;
+.footer p {
+    font-size: 13px;
 }
