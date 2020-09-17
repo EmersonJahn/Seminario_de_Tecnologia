@@ -9,7 +9,6 @@
 }
 
 .linha-palestra {
-    cursor: pointer;
     padding: 10px 0;
     border-bottom: 1px solid lightgray;
 }
@@ -27,4 +26,10 @@
     margin-top: 10px;
     padding-top: 5px;
     border-top: 1px solid lightgray;
+}
+
+.card-palestrante .organizacao {
+    margin-top: 3px;
+    font-size: 10pt;
+    font-style: italic;
 }
