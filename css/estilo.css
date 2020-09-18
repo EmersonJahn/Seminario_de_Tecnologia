@@ -1,6 +1,10 @@
+/* .teste {
+    min-height:100vh;
+} */
+
 .footer {
-    position: fixed;
-    /* left: 0; */
+    /* position: fixed; */
+    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -8,10 +12,12 @@
 
 .footer p {
     font-size: 13px;
+    margin: 0;
 }
 
 .titulo {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .titulo span {
@@ -20,8 +26,16 @@
 
 .tags {
     font-size: 20px;
-    color: #0033cc;
+    color: #0099ff;
     margin-bottom: 0.7rem;
+    font-weight: bold;
+}
+
+.sub_tags {
+    font-size: 15px;
+    color: #ff0066;
+    font-weight: bold;
+    /* margin-bottom: 0.7rem; */
 }
 
 .comissao p {
