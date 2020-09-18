@@ -23,3 +23,19 @@
     color: #0033cc;
     margin-bottom: 0.7rem;
 }
+
+.comissao p {
+    margin: 0;
+}
+
+
+/* @media (min-width: 1450px) {
+
+    .sobre {
+        padding-left: -6rem !important;
+    }
+
+    .comissao {
+        padding-right: 12rem;
+    }
+} */
