@@ -10,6 +10,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/palestras.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <script>
+        $(() => {
+            
+            $("#cursoSelect").change((event) => {
+                const valFiltro = $("#cursoSelect").val();
+                
+                // $("#container-dados").filter(() => {
+                //     // $(this).toggle();
+                //     console.log($(this));
+                // })
+                
+            })
+        });
+    </script>
 </head>
 <body>
     
@@ -17,23 +31,57 @@
         <div class="row">
             <div class="col-md-2 navbar-text text-center text-md-left">
                 <a href="index.html">
-                    <img src="/imagens/Logo_UCS_Horizontal_Transparente.png" height="65" class="d-inline-block align-top" alt="Logo da UCS">
+                    <img src="/imagens/Logo_UCS_Horizontal_Transparente.png" height="70" class="d-inline-block align-top" alt="Logo da UCS">
                 </a>
             </div>
-            <div class="col-md-10 my-auto text-center text-md-right">
+            <div class="titulo col-md-10 my-auto text-center text-md-right">
                 <u> 8º SEMINÁRIO DE TECNOLOGIA, INOVAÇÃO E DESENVOLVIMENTO SOCIAL - VIII STIDS </u>
                 <br>
-                DESAFIOS DA CIÊNCIA EM MEIO A CRISES
+                <span class="mt-2 mt-md-0">DESAFIOS DA CIÊNCIA EM MEIO A CRISES</span>
             </div>
         </div>
     </nav>
     
-    <h3 class="my-4 mx-2">Palestras do dia 01/10/2020</h3>
+    <div class="my-4 mx-2">
+    
+        <h3 class="d-inline-block">Palestras do dia 01/10/2020</h3>
+        
+        <div class="text-center float-md-right d-block d-md-flex mt-2 mt-md-0">
+        
+            <a href="<!-- // TODO -->" class="btn btn-primary mr-md-2 mt-2">
+                Palestras do dia 31/09
+            </a>
+            
+            <a href="<!-- // TODO -->" class="btn btn-primary mt-2">
+                Palestras do dia 02/09
+            </a>
+            
+        </div>
+        
+    </div>
     
     <div class="container-fluid px-1 px-md-3">
         <div class="col-12 px-0">
             
             <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-4">
+                        
+                        <div class="form-group">
+                            <label for="cursoSelect">Curso</label>
+                            <select class="form-control" id="cursoSelect">
+                                <option value="Todos">Todos</option>
+                                <option value="Eng. de Materiais">Eng. de Materiais</option>
+                                <option value="Criação Digital, Jogos Digitais e Tecnologias Digitais">Criação Digital, Jogos Digitais e Tecnologias Digitais</option>
+                                <option value="Eng Mecânica/Eng. de Produção/PPGMEC">Eng Mecânica/Eng. de Produção/PPGMEC</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid mt-2" id="container-dados">
                 
                 <div class="row d-none d-md-flex">
                     <div class="col-md-2 titulo-palestras">
@@ -50,8 +98,119 @@
                     </div>
                 </div>
                 
-                
                 <div class="row linha-palestra" data-toggle="collapse" href="#detalhes-palestra-1" role="button" aria-expanded="false" aria-controls="detalhes-palestra-1" style="cursor: pointer;">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Avanços tecnológicos, principais características e desafios para fabricação de moldes e matrizes pré endurecidos acima de 42 HR
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        20:00 - 22:00
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        Eng. de Materiais
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-1">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Não informados
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHHJmsYM7WGXA/profile-displayphoto-shrink_200_200/0?e=1605744000&v=beta&t=WxRkdx4KRoSQESXQArzNMcdR3Qj5_VYYoVTL1xmMTVI" alt="Giovani Verdi Cappucio" width="150">
+                                        <div class="nome">
+                                            Giovani Verdi Cappucio
+                                        </div>
+                                        <div class="organizacao">
+                                            Villare Metals - SP
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://br.linkedin.com/in/giovani-verdi-cappucio-060782a" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row linha-palestra" data-toggle="collapse" href="#detalhes-palestra-2" role="button" aria-expanded="false" aria-controls="detalhes-palestra-2" style="cursor: pointer;">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Avanços tecnológicos, principais características e desafios para fabricação de moldes e matrizes pré endurecidos acima de 42 HR
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        20:00 - 22:00
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        Criação Digital, Jogos Digitais e Tecnologias Digitais
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-2">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Não informados
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHHJmsYM7WGXA/profile-displayphoto-shrink_200_200/0?e=1605744000&v=beta&t=WxRkdx4KRoSQESXQArzNMcdR3Qj5_VYYoVTL1xmMTVI" alt="Giovani Verdi Cappucio" width="150">
+                                        <div class="nome">
+                                            Giovani Verdi Cappucio
+                                        </div>
+                                        <div class="organizacao">
+                                            Villare Metals - SP
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://br.linkedin.com/in/giovani-verdi-cappucio-060782a" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row linha-palestra" data-toggle="collapse" href="#detalhes-palestra-3" role="button" aria-expanded="false" aria-controls="detalhes-palestra-3" style="cursor: pointer;">
                     <div class="d-none d-md-flex col-4 col-md-2">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Palestra
@@ -69,7 +228,7 @@
                         Eng Mecânica/Eng. de Produção/PPGMEC
                     </div>
                 </div>
-                <div class="row linha-palestra collapse" id="detalhes-palestra-1">
+                <div class="row linha-palestra collapse" id="detalhes-palestra-3">
                     <div class="col-12">
                         <div class="row mt-2">
                             
