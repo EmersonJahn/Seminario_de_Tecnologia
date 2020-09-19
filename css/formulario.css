@@ -1,0 +1,12 @@
+legend {
+    font-size: 25px;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+@media (min-width: 1050px) {
+
+    .formulario {
+        padding: 2rem 15rem;
+    }
+}
