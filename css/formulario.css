@@ -1,7 +1,15 @@
 legend {
+    margin-top: 2rem;
+    margin-bottom: 0;
     font-size: 25px;
-    margin: 2rem 0;
     font-weight: bold;
+}
+
+.formulario p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 12px;
+    color: red;
 }
 
 @media (min-width: 1050px) {

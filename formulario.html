@@ -26,67 +26,67 @@
         </div>
     </nav>
 
-    <form action="inscrever-se" class="container formulario">
+    <form action="dados_salvos.html" class="container formulario">
 
-            <legend>Preencha seus dados</legend>
+        <legend>Preencha seus dados</legend>
+        <p>Para inscrever-se você deve preencher todos os dados</p>
 
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome">
-            </div>
-            
-            <div class="form-row">
-                <div class="col-sm-6">
-                    <label for="cpf">CPF</label>
-                    <input type="text" class="form-control" id="cpf">
-                </div>
-
-                <div class="col-sm-6">
-                    <label for="data_nasc">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="data_nasc">
-                </div>
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+        </div>
+        
+        <div class="form-row">
+            <div class="col-sm-6">
+                <label for="cpf">CPF</label>
+                <input type="number" class="form-control" id="cpf" required>
             </div>
 
-            <div class="form-group mt-3">
-                <label for="endereco">Endereço</label>
-                <input type="text" class="form-control" id="endereco">
+            <div class="col-sm-6">
+                <label for="data_nasc">Data de Nascimento</label>
+                <input type="date" class="form-control" id="data_nasc" required>
+            </div>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="endereco">Endereço</label>
+            <input type="text" class="form-control" id="endereco" required>
+        </div>
+
+        <div class="form-row">
+            <div class="col-sm-10">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" required>
             </div>
 
-            <div class="form-row">
-                <div class="col-sm-10">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" class="form-control" id="cidade">
-                </div>
-
-                <div class="col-sm-2">
-                    <label for="estado">Estado</label>
-                    <input type="text" class="form-control" id="estado" maxlength="2">
-                </div>
+            <div class="col-sm-2">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" id="estado" maxlength="2" required>
             </div>
+        </div>
 
-            <div class="form-group mt-3">
-                <label for="instituicao">Instituição de Ensino</label>
-                <input type="text" class="form-control" id="instituicao">
-            </div>
+        <div class="form-group mt-3">
+            <label for="instituicao">Instituição de Ensino</label>
+            <input type="text" class="form-control" id="instituicao" required>
+        </div>
 
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="text" class="form-control" id="email">
-            </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" class="form-control" id="email" required>
+        </div>
 
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Palestras</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>1</option>
-                  <option>2</option> // TODO inserir os dados recebidos
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="palestras">Palestras</label>
+            <select class="form-control" id="palestras">
+            <option>1</option> <!-- TODO inserir os dados recebidos -->
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+        </div>
 
-            <a href="/dados_salvos.html" class="btn btn-dark btn-block mt-5">Enviar dados</a>
-
+        <input type="submit" class="btn btn-dark btn-block mt-5" value="Confirmar inscrição">
 
     </form>
 
