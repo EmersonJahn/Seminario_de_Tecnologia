@@ -16,7 +16,9 @@
     <nav class="container-fluid bg-dark text-white py-4">
         <div class="row">
             <div class="col-md-2 navbar-text text-center text-md-left">
-                <img src="/imagens/Logo_UCS_Horizontal_Transparente.png" height="70" class="d-inline-block align-top" alt="Logo da UCS">
+                <a  target="_blank" href="https://www.ucs.br/site">
+                    <img src="/imagens/Logo_UCS_Horizontal_Transparente.png" height="70" class="d-inline-block align-top" alt="Logo da UCS">
+                </a>
             </div>
             <div class="titulo col-md-10 my-auto text-center text-md-right">
                 <u> 8º SEMINÁRIO DE TECNOLOGIA, INOVAÇÃO E DESENVOLVIMENTO SOCIAL - VIII STIDS </u>
@@ -29,7 +31,7 @@
     <form action="dados_salvos.html" class="container formulario">
 
         <legend>Preencha seus dados</legend>
-        <p>Para inscrever-se você deve preencher todos os dados</p>
+        <p>Para inscrever-se é necessário preencher todos os dados.</p>
 
         <div class="form-group">
             <label for="nome">Nome</label>
@@ -86,7 +88,12 @@
             </select>
         </div>
 
-        <input type="submit" class="btn btn-dark btn-block mt-5" value="Confirmar inscrição">
+        <div class="container">
+            <div class="row mt-5">
+                <input type="button" class="col btn btn-primary mr-sm-5" value="Voltar" onClick="history.go(-1)"> 
+                <input type="submit" class="col btn btn-dark" value="Confirmar inscrição">
+            </div>
+        </div>
 
     </form>
 
