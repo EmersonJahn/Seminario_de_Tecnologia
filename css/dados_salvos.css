@@ -1,0 +1,19 @@
+/* body {
+    background-color: #d9d9d9;
+} */
+
+.imagem {
+    text-align: center;
+}
+
+.imagem p {
+    font-size: 20px;
+    color: #009933;
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+}
+
+.pag-inicial {
+    text-align: center;
+    margin-top: 8rem;
+}
