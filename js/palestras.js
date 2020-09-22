@@ -21,6 +21,29 @@ $(() => {
   
 });
 
+function inscreverNasPalestras() {
+  
+  const itens = $('input:checkbox');
+  
+  itens.each((index, element) => {
+    
+    if (element.checked) {
+      
+      const linha = element.parentNode.parentNode;
+      
+      const nomeCurso = linha.children[2].innerText;
+      const horarioCurso = linha.children[3].innerText;
+      
+      adicionaAoCarrinho(nomeCurso + ' (' + dataPalestras + ' ' + horarioCurso + ')');
+      
+    }
+    
+  });
+  
+  location.href = 'formulario.html';  
+
+}
+
 function inscreverNaPalestra(indice) {
   
   const itens = $("#container-dados .row.linha-principal");

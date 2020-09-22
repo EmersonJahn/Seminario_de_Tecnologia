@@ -10,6 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/palestras.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/carrinho.js"></script>
     <script src="./js/palestras.js"></script>
     <script>
         const dataPalestras = '01/10/2020';
@@ -54,39 +55,17 @@
         
     </div>
 
-    <!-- <div class="mb-5 mt-2 mx-2">
-
-        <div class="text-center float-md-right d-block d-md-flex mt-2 mt-md-0">
-            <a href="/formulario.html" class="btn btn-dark mt-2">
-                Inscrever-se
-            </a>
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-12 mb-2">
+                <button onclick="inscreverNasPalestras()" class="btn btn-dark mt-2">
+                    Inscrever-se nas palestras selecinadas
+                </a>
+            </div>
         </div>
         
-    </div> -->
-
-    <div class="container-fluid">
         <div class="col-12 px-0">
-            
-            <!-- <div class="container-fluid mt-3">
-                <div class="row">
-                    <div class="col-md-4">
-                        
-                        <div class="form-group">
-                            <label for="cursoSelect">Curso</label>
-                            <select class="form-control" id="cursoSelect">
-                                <option value="Todos">Todos</option>
-                                <option value="Engenharia Química e Eng. de Materiais">Engenharia Química e Eng. de Materiais</option>
-                                <option value="Multidisciplinar">Multidisciplinar</option>
-                                <option value="PPGMEC">PPGMEC</option>
-                                <option value="Criação Digital, Jogos Digitais e Tecnologias Digitais">Criação Digital, Jogos Digitais e Tecnologias Digitais</option>
-                                <option value="Eng. Produção">Eng. Produção</option>
-                                <option value="PPGMEC">Licenciatura (Física, Química e Matemática)</option>
-                            </select>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div> -->
             
             <div class="container-fluid mt-2" id="container-dados">
                 
@@ -109,24 +88,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-1" role="button" aria-expanded="false" aria-controls="detalhes-palestra-1" style="cursor: pointer;">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
                         <input type="checkbox" class="checkbox-inline">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-1" aria-controls="detalhes-palestra-1">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Palestra
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-1" aria-controls="detalhes-palestra-1">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Falhas em trocadores de calor e vasos de pressão na indústria petroquímica, óleo e gás
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-1" aria-controls="detalhes-palestra-1">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">18:00 - 19:30</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-1" aria-controls="detalhes-palestra-1">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Engenharia Química e Eng. de Materiais</span>
                     </div>
@@ -170,24 +149,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-2" role="button" aria-expanded="false" aria-controls="detalhes-palestra-2">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
-                        <input type="checkbox" class="checkbox-inline ">
+                        <input type="checkbox" class="checkbox-inline">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-2" aria-controls="detalhes-palestra-2">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Palestra
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-2" aria-controls="detalhes-palestra-2">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Desafios urbanos no "novo normal"
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-2" aria-controls="detalhes-palestra-2">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">19:40 - 22:30</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-2" aria-controls="detalhes-palestra-2">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Multidisciplinar</span>
                     </div>
@@ -231,24 +210,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-3" role="button" aria-expanded="false" aria-controls="detalhes-palestra-3">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
-                        <input type="checkbox" class="checkbox-inline ">
+                        <input type="checkbox" class="checkbox-inline">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-3" aria-controls="detalhes-palestra-3">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Palestra
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-3" aria-controls="detalhes-palestra-3">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Formação avançada: diferecial para inovação e desenvolvimento em empresas
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-3" aria-controls="detalhes-palestra-3">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">18:00 - 19:30</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-3" aria-controls="detalhes-palestra-3">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">PPGMEC</span>
                     </div>
@@ -292,24 +271,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-4" role="button" aria-expanded="false" aria-controls="detalhes-palestra-4">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
-                        <input type="checkbox" class="checkbox-inline ">
+                        <input type="checkbox" class="checkbox-inline">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-4" aria-controls="detalhes-palestra-4">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Oficina
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-4" aria-controls="detalhes-palestra-4">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Organização de Projetos de Jogos com Notion
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-4" aria-controls="detalhes-palestra-4">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">19:45</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-4" aria-controls="detalhes-palestra-4">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Criação Digital, Jogos Digitais e Tecnologias Digitais</span>
                     </div>
@@ -353,24 +332,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-5" role="button" aria-expanded="false" aria-controls="detalhes-palestra-5">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
-                        <input type="checkbox" class="checkbox-inline ">
+                        <input type="checkbox" class="checkbox-inline">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-5" aria-controls="detalhes-palestra-5">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Oficina
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-5" aria-controls="detalhes-palestra-5">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Criação de portifólio na plataforma PortfolioBox
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-5" aria-controls="detalhes-palestra-5">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">21:00</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-5" aria-controls="detalhes-palestra-5">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Criação Digital, Jogos Digitais e Tecnologias Digitais</span>
                     </div>
@@ -414,24 +393,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-6" role="button" aria-expanded="false" aria-controls="detalhes-palestra-6">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
-                        <input type="checkbox" class="checkbox-inline ">
+                        <input type="checkbox" class="checkbox-inline">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-6" aria-controls="detalhes-palestra-6">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Oficina
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-6" aria-controls="detalhes-palestra-6">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Indústria 4.0 e o Opcenter APS
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-6" aria-controls="detalhes-palestra-6">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">18:00 - 19:00</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-6" aria-controls="detalhes-palestra-6">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Eng. Produção</span>
                     </div>
@@ -475,24 +454,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-7" role="button" aria-expanded="false" aria-controls="detalhes-palestra-7">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
                         <input type="checkbox" class="checkbox-inline ">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-7" aria-controls="detalhes-palestra-7">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Palestra
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-7" aria-controls="detalhes-palestra-7">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Educar pela pesquisa
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-7" aria-controls="detalhes-palestra-7">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">18:00 -19:30</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-7" aria-controls="detalhes-palestra-7">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Licenciatura (Física, Química e Matemática)</span>
                     </div>
@@ -536,24 +515,24 @@
                 </div>
                 
                 
-                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-8" role="button" aria-expanded="false" aria-controls="detalhes-palestra-8">
+                <div class="row linha-palestra linha-principal">
                     <div class="col-2 col-md-1">
                         <div class="d-md-none titulo-palestra-mobile">Selecione</div>
                         <input type="checkbox" class="checkbox-inline ">
                     </div>
-                    <div class="d-none d-md-flex col-4 col-md-2">
+                    <div class="d-none d-md-flex col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-8" aria-controls="detalhes-palestra-8">
                         <div class="d-md-none titulo-palestra-mobile">Tipo</div>
                         Palestra
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4" data-toggle="collapse" href="#detalhes-palestra-8" aria-controls="detalhes-palestra-8">
                         <div class="d-md-none titulo-palestra-mobile">Titulo</div>
                         Que profissional você quer ser?
                     </div>
-                    <div class="col-4 col-md-2">
+                    <div class="col-4 col-md-2" data-toggle="collapse" href="#detalhes-palestra-8" aria-controls="detalhes-palestra-8">
                         <div class="d-md-none titulo-palestra-mobile">Horário</div>
                         <span id="horario-palestra">18:00 - 19:30</span>
                     </div>
-                    <div class="col-8 col-md-3">
+                    <div class="col-8 col-md-3" data-toggle="collapse" href="#detalhes-palestra-8" aria-controls="detalhes-palestra-8">
                         <div class="d-md-none titulo-palestra-mobile">Curso</div>
                         <span id="curso-palestra">Multidisciplinar</span>
                     </div>
