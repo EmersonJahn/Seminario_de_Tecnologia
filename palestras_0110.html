@@ -50,7 +50,7 @@
     <div class="container-fluid px-1 px-md-3">
         <div class="col-12 px-0">
             
-            <div class="container-fluid mt-3">
+            <!-- <div class="container-fluid mt-3">
                 <div class="row">
                     <div class="col-md-4">
                         
@@ -58,15 +58,23 @@
                             <label for="cursoSelect">Curso</label>
                             <select class="form-control" id="cursoSelect">
                                 <option value="Todos">Todos</option>
+                                <option value="Engenharia Química">Engenharia Química</option>
                                 <option value="Eng. de Materiais">Eng. de Materiais</option>
-                                <option value="Criação Digital, Jogos Digitais e Tecnologias Digitais">Criação Digital, Jogos Digitais e Tecnologias Digitais</option>
-                                <option value="Eng Mecânica/Eng. de Produção/PPGMEC">Eng Mecânica/Eng. de Produção/PPGMEC</option>
+                                <option value="PPGMEC">PPGMEC</option>
+                                <option value="Ciência da Computação">Ciência da Computação</option>
+                                <option value="Ciência da Computação, Engenharia de Computação, Sistemas de Informação, ADS">Ciência da Computação, Engenharia de Computação, Sistemas de Informação, ADS</option>
+                                <option value="Eng. Ambiental">Eng. Ambiental</option>
+                                <option value="Eng. Civil">Eng. Civil</option>
+                                <option value="Eng. Civil e Eng. Ambiental">Eng. Civil e Eng. Ambiental</option>
+                                <option value="Eng. Produção">Eng. Produção</option>
+                                <option value="Eng. Mecânica, Eng. Automotiva">Eng. Mecânica, Eng. Automotiva</option>
+                                <option value="Licenciatura( Física, Química e Matemática)">Licenciatura( Física, Química e Matemática)</option>
                             </select>
                         </div>
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <div class="container-fluid mt-2" id="container-dados">
                 
@@ -82,6 +90,894 @@
                     </div>
                     <div class="col-md-3 titulo-palestras">
                         Curso
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-1" role="button" aria-expanded="false" aria-controls="detalhes-palestra-1">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Eng Química: atuação profissional e experiências internacionais
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:00 - 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Engenharia Química</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-1">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Mesa redonda
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Mariana Stédile" width="150">
+                                        <div class="nome">
+                                            Mariana Stédile
+                                        </div>
+                                        <div class="organizacao">
+                                            Atotech
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Katia Patricia Almeida" width="150">
+                                        <div class="nome">
+                                            Katia Patricia Almeida
+                                        </div>
+                                        <div class="organizacao">
+                                            Eaton
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Felipe Cemin" width="150">
+                                        <div class="nome">
+                                            Felipe Cemin
+                                        </div>
+                                        <div class="organizacao">
+                                            Unicamp 
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Franciele de Oliveira Fiorio" width="150">
+                                        <div class="nome">
+                                            Franciele de Oliveira Fiorio
+                                        </div>
+                                        <div class="organizacao">
+                                            Procter & Gamble 
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-2" role="button" aria-expanded="false" aria-controls="detalhes-palestra-2">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Enrolando Fibras – de Tecidos Inteligentes à Robótica
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">19:40 - 22:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. de Materiais</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-2">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Músculos artificiais são materiais sintéticos que, assim como a musculatura natural, são fibras com a propriedade de atuar. No caso da fibra muscular sintética, esta pode apresentar atuação rotacional, linear ou de flexão sob diferentes estímulos (físico, químico ou biológico). Na última década, houve um exponencial aumento no número de publicações na área de músculos artificiais. As aplicações desses materiais vão desde tecidos e casas inteligentes, robótica, e até mesmo geração de energia. Nessa palestra, a cientista Jung de Andrade, cuja experiência em músculos artificiais inclui patente licenciada e vários artigos no tema, compartilhará sua experiência na área de músculos artificiais, bem como as perspectivas futuras no avanço destes materiais. Mônica Jung de Andrade*
+                                <br>
+                                University of Texas at Dallas, Dallas – TX, 75080, United States of America
+                                <br>
+                                *Monica.jung@utdallas.edu
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Mônica Jung Andrade" width="150">
+                                        <div class="nome">
+                                            Mônica Jung Andrade
+                                        </div>
+                                        <div class="organizacao">
+                                            Universidade do Texas-Dallas
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4762979Z6" target="_blank">
+                                            Lattes
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-3" role="button" aria-expanded="false" aria-controls="detalhes-palestra-3">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Oficina
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Fabricação avançada: melhorias de processos e redução de custos
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:00 - 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">PPGMEC</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-3">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Introdução às funcionalidades básicas do software, com as principais ferramentas e recursos para escultura digital e modelagem orgânica e de superfícies.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQE5jXVVhELodA/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=-H-8GyT0YNmLvdF-2yA809BdI6uYd-URj6Hwr399uEQ" alt="Roberto Fuhrmeister" width="150">
+                                        <div class="nome">
+                                            Roberto Fuhrmeister
+                                        </div>
+                                        <div class="organizacao">
+                                            Monster Crossing Studio Caxias do Sul - RS
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/roberto-fuhrmeister-75295328/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-4" role="button" aria-expanded="false" aria-controls="detalhes-palestra-4">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        35 anos do Curso de Ciência da Computação: Perspectivas de Carreira
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:30 - 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Ciência da Computação</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-4">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                O curso de Ciência da Computação completa 35 anos em 2020, esta atividade irá debater as perspectivas de carreira profissional para os alunos e egressos na área de Informática e Tecnologia da Informação.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEAx8imCZKTEQ/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=Acy2RPwevTJ1sGoUxHMMia-f_ZtKsTg6rfDjTOt0m0A" alt="Daniel Luis Notari" width="150">
+                                        <div class="nome">
+                                            Daniel Luis Notari
+                                        </div>
+                                        <div class="organizacao">
+                                            Professor UCS
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/daniel-lu%C3%ADs-notari-9011963a/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGtl4nWJMXZLw/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=9Km7uZcmmxALj5jM9j2Y258YtYiupA0NyXypjCeRM98" alt="Maiki Manfro Girardi" width="150">
+                                        <div class="nome">
+                                            Maiki Manfro Girardi
+                                        </div>
+                                        <div class="organizacao">
+                                            Focco Sistemas de Gestão
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/maikigirardi/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Kelly Menezes Crespi" width="150">
+                                        <div class="nome">
+                                            Kelly Menezes Crespi
+                                        </div>
+                                        <div class="organizacao">
+                                            CrespiDB
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/kellycrespi/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQF5iMi2DDLnfA/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=kFbKvrRKQQp1sro_vzwnJSiSrERv8wWbC1hsvgCkbhI" alt="Rafael Franzosi" width="150">
+                                        <div class="nome">
+                                            Rafael Franzosi
+                                        </div>
+                                        <div class="organizacao">
+                                            Effective Gestão Empresarial
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/rafael-franzosi-110b5ba0/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4798948J0" alt="André G. Adami" width="150">
+                                        <div class="nome">
+                                            André G. Adami
+                                        </div>
+                                        <div class="organizacao">
+                                            Professor UCS
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4798948J0" target="_blank">
+                                            Lattes
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-5" role="button" aria-expanded="false" aria-controls="detalhes-palestra-5">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Uma aplicação de Ciência de Dados: Modelos Preditivos de Comportamento
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">20:00 - 22:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Ciência da Computação, Engenharia de Computação, Sistemas de Informação, ADS</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-5">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                A palestra irá abordar todas as etapas desde o planejamento, construção, desenvolvimento e análise de uma aplicação de ciência de dados envolvendo experimentos com modelos preditivos para identificar atributos potencialmente determinantes de padrões de comportamento.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Daniel Luis Notari" width="150">
+                                        <div class="nome">
+                                            Silvio Angonese
+                                        </div>
+                                        <div class="organizacao">
+                                            Promob a 2020 Company
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-6" role="button" aria-expanded="false" aria-controls="detalhes-palestra-6">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Bate papo com egressos: desafios e oportunidades
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:00- 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. Ambiental</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-6">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                A palestra irá abordar todas as etapas desde o planejamento, construção, desenvolvimento e análise de uma aplicação de ciência de dados envolvendo experimentos com modelos preditivos para identificar atributos potencialmente determinantes de padrões de comportamento.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Prof. Tiago Panizzon" width="150">
+                                        <div class="nome">
+                                            Prof. Tiago Panizzon
+                                        </div>
+                                        <div class="organizacao">
+                                            UCS
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Verônica Casagrande" width="150">
+                                        <div class="nome">
+                                            Verônica Casagrande
+                                        </div>
+                                        <div class="organizacao">
+                                            Eng. Ambiental
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Robson Tadeu Bolson" width="150">
+                                        <div class="nome">
+                                            Robson Tadeu Bolson
+                                        </div>
+                                        <div class="organizacao">
+                                            Eng. Ambiental
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-7" role="button" aria-expanded="false" aria-controls="detalhes-palestra-7">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Bate papo com egressos: Os desafios do mercado de trabalho
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:30 - 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. Civil</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-7">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Não informado
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-8" role="button" aria-expanded="false" aria-controls="detalhes-palestra-8">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Comunidades Sustentáveis
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">20:00 - 22:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. Civil e Eng. Ambiental</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-8">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Não informado
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4787987P6" alt="Prof. Miguel Aloysio Sattler" width="150">
+                                        <div class="nome">
+                                            Prof. Miguel Aloysio Sattler
+                                        </div>
+                                        <div class="organizacao">
+                                            UFRGS
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4787987P6" target="_blank">
+                                            Lattes
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-9" role="button" aria-expanded="false" aria-controls="detalhes-palestra-9">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Futuro e tendências da Engenharia de Produção
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">20:00 - 21:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. Produção</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-9">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Palestra reflexiva como marco para a comemoração dos 20 anos do curso de Engenharia de Produção - Caxias / UCS.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4706952A6" alt="Carlos Eduardo Sanches" width="150">
+                                        <div class="nome">
+                                            Carlos Eduardo Sanches
+                                        </div>
+                                        <div class="organizacao">
+                                            Vice-presidente da Associação Brasileira de Engenharia de Produção - ABEPRO
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4706952A6" target="_blank">
+                                            Lattes
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8443587T2" alt="Bernardo Bregoli Soares" width="150">
+                                        <div class="nome">
+                                            Bernardo Bregoli Soares
+                                        </div>
+                                        <div class="organizacao">
+                                            egresso do curso e Diretor de Excelência Operacional - RANDON S.A.
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8443587T2" target="_blank">
+                                            Lattes
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4793970J6" alt="Ademar Galelli" width="150">
+                                        <div class="nome">
+                                            Ademar Galelli
+                                        </div>
+                                        <div class="organizacao">
+                                            PPGEP
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4793970J6" target="_blank">
+                                            Lattes
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Michele Otobelli Bertéli" width="150">
+                                        <div class="nome">
+                                            Michele Otobelli Bertéli
+                                        </div>
+                                        <div class="organizacao">
+                                            Mediadora 
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-10" role="button" aria-expanded="false" aria-controls="detalhes-palestra-10">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        Gestão Industrial - Foco na Automação
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:00 - 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. Mecânica, Eng. Automotiva</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-10">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Os desafios da gestão industrial em tempos de crise e perspectivas futuras.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH8-OT9BayLUQ/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=uWOF2tuC6xW_iOzAnhiAkTr8NpVoFahqFzULLnvtjiE" alt="Riccardo Bianchi" width="150">
+                                        <div class="nome">
+                                            Riccardo Bianchi
+                                        </div>
+                                        <div class="organizacao">
+                                            Tramontina
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/riccardo-bianchi-24b1a683/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-11" role="button" aria-expanded="false" aria-controls="detalhes-palestra-11">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        A importância do CAE (Elementos Finitos) no Desenvolvimento de Produtos
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">20:00 - 22:00</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Eng. Mecânica, Eng. Automotiva</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-11">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Como o uso de softwares que usam o método de elementos finitos podem contribuir para o desenvolvimentos de produtos mais acertivos, evitando o método de tentativa-erro.
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Avelino Alves Filho" width="150">
+                                        <div class="nome">
+                                            Avelino Alves Filho
+                                        </div>
+                                        <div class="organizacao">
+                                            NCE-Núcleo de Cálculos Especiais
+                                        </div>
+                                        <a class="btn btn-sm btn-primary mt-2" href="https://www.linkedin.com/in/avelino-alves-filho-88a7983/?originalSubdomain=br" target="_blank">
+                                            Linkedin
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-12" role="button" aria-expanded="false" aria-controls="detalhes-palestra-12">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        BNCC nas ciências da Natureza e suas Tecnologias
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">18:00 - 19:30</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Licenciatura( Física, Química e Matemática)</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-12">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Não informado
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,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" alt="Avelino Alves Filho" width="150">
+                                        <div class="nome">
+                                            Ivanete Rocha de Miranda
+                                        </div>
+                                        <div class="organizacao">
+                                            Não definido
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row linha-palestra linha-principal" data-toggle="collapse" href="#detalhes-palestra-13" role="button" aria-expanded="false" aria-controls="detalhes-palestra-13">
+                    <div class="d-none d-md-flex col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Tipo</div>
+                        Palestra
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="d-md-none titulo-palestra-mobile">Titulo</div>
+                        O papel da educação científica e o embate com a onda negacionista: pequeno manual de orientação 
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="d-md-none titulo-palestra-mobile">Horário</div>
+                        <span id="horario-palestra">20:00 - 22:00</span>
+                    </div>
+                    <div class="col-8 col-md-3">
+                        <div class="d-md-none titulo-palestra-mobile">Curso</div>
+                        <span id="curso-palestra">Licenciatura( Física, Química e Matemática)</span>
+                    </div>
+                </div>
+                <div class="row linha-palestra collapse" id="detalhes-palestra-13">
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            
+                            <div class="col-12">
+                                <h5>Detalhes</h5>
+                                Não Informado
+                            </div>
+                            
+                            <div class="col-12"><hr></div>
+                            
+                            <div class="col-12">
+                                
+                                <h5>Palestrantes</h5>
+                                
+                                <div class="d-flex flex-row flex-wrap justify-content-start">
+                                    
+                                    <div class="card-palestrante">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEVPT0////89PT3s7OxDQ0NKSkpGRkZJSUm8vLxTU1NAQEDz8/N+fn77+/tQUFDh4eGQkJBvb2+zs7PU1NTNzc2IiIhmZmZfX1/j4+OgoKDAwMBYWFiUlJSurq7a2trp6emlpaWCgoJ2dnaamporKys3lfueAAAL6klEQVR4nNWd24KyOgyFC7ZFy1lRR1Fnxn+//zNuEI/IoS0rA667uRG+oW3SNEmZQ63Qj7P5cZcE6WabLyIWLfLtJg2S3XGexX5I/nxG+Nv+1/5nnUau4lx6Qgj2UPGXJzlXbpSud/t4RvgWVITxPklzVZKxbpWkapEm+5joTSgI42UQSd7L9srJZXReUlCiCf19wlxuAveEKV2W7H3wG0EJv+eBpzwrups8JYL5N/KlcITh/iwsP17tU3Jx3uPWWBThKuEQvBskX59AbwYh9Jcbd9jgfJfnbo+QKQkgjP8x4Od7SPDoAFhcBxOeAikJ8CpJeR48WAcSrlKX4vM9JNx0NSLh6UzMVzGeBzEOIIwDkunXwMiDAfPRmtBPBtp2E3nqYL2uWhKGR8L1pUlSLi2dADvC1Ub9KV8ptbGbjjaE4eGPJuCrBE9sPqMFYSb+doA+JGX2B4T+2h2Jr5RaG684poSrfKwPWEnmpp/RkHCnxpiBzxJqR0j4veEj85XiG6Mdsglhxsb+gJWEMBmpBoTHKXzASvyHgDAMpgNYIAbaplGXcLYddw2tS251o8iahKd8GlPwIbHQ3BvrEWZiaoBlEFlvvdEinI/pxrTLnaMIj9MELBCXGMKfv98p6YofEYS76QIWnni/C9dLuJvqEK3k9iL2EU54iFZSfQO1h/A4dcBiLvYsN92EEzUTr+oxGp2E2ScAFoidpr+L8DQ9R6ZZXpcD10E4m5wv2iaRd7jh7YTh9lMAC8Rt+2aqnTAAb5fKrBK3kk4WiplkYE74A93wSjdPjtnpe1bqO86Wh61txkaz2nf9bYQZEFDw/PgePJrNNxx4tsPbFtQWwm/coxlP2x5+Qp7PiZYIXAvhBvZkueiyVidcfFJsTAh3sOeqpCcMj3N8ebMT3kiY4Z7avw1fwSIkqnG0NBH6KFMvPJ0jv2/Y4/Km8dJEuEZZQqEXDoMhyrUeIczfbl3A6/pCWY0mH/ydMEQ9TunEia7/VNTEl+/e2zthAhqj3q82oOP8Az1UJv2EK5ihMDmtDVFTkb+tbXVC2I5CaYVr70KN03e7XydEHaG1eRitOqM+Yj0yVSP0UYaC7w0JYa6+rM2OGiFqmWEL49SXHPTk+mLzShjDVm3DdIJCP6h/rnpN83slDGCm1zzx9YT673qv+/0XQpyl8IwBHQcWNXm1GC+EqPWMiV8LwgD29HMb4QoWAJYap15vgk1E5j5/xGfCFLax1/a5n7XHbffTZsITLobvflkQrnCnQO7TcvpECJsHxRNscpZhi+mr1/8gjIERYG5D+AU8yZOPwNuD8DA2IczdKCT/vRP6uJ+3HKXAechYdH+DOyE0L8+1qSBEhtmfTobvhNCTJmVTrTRHEj52bzdCnLUv1Ry57NESeth194xvhGtoAYzx7rAUzqcp5d02UVfCEJs8qhHqftc/bJURD18IcR7TRVZ+KXYY3cfRlRC2q6gkDbKU7wK/w22HURF+g4/svYMFIe5Er5KYPRFCF2pmuT9cYN/hthhUhECnu5R0TWOJpf5zsbkRIngQ+uA5/m9m06wknP3DDiXh3wn30Py8J6/XVKjji0pqfydMoN9Q2TcK8KH/6sroXwiRP/saQjAVLpBSKroRxlCf1Hs/4NIXdjRdgiklIdbltbKFNx2w7vHySoi1FUYno3X9Ql/lYi9Kwgj5q+bnas8C50NGFSEyBFXKte+eE4KTkmV8IQTvK+w2h5UoXoWh16/6sYGRsMaiWtcZ/mcZt+0pgzv7uqq0zczx0T699VoTovdPjC38ghAZiL2K23mmyJj07U2+CkL07L78sPkhdwFI8SL7gnBHUeDLz8YmI6WopJY/BSE4AHSVZxz1hi8Hl9dYF4TwpbT6adO+R/gFr1SxmLIQ67PdZGwxZiSvwRYh82mqt5RpQyB0uO8q12cExqKU8Uk+2ju+SsUMeqb1UF/d45vg/sz1PTKGDpVeZZz2RfQefM6ONKPDa0oq7xI2zHaXPDLwic9No+WX1uTtWEJUZSjMgsI05rB4jYSBA/p3Ge6DcWU6rxIBo3FpjCcieht+k0jZhuaX37OROwUr8njThm2pftrIIhLZikJbhkqvbpABId1L5IxoDWNGH3FJ12VrwWi2FhdFujORylRcXoLup1uK5ZoEKwdsFCWjZmXQnLKBSkQ4D5nmPvhE2upuQbmWlnWrGoS07TdyOnt40UKDkHQUFXxkPs1F4xNuyPzSSqMTFn4p1d6i0viEAdn+sNL4hAnbkfaOH52w2OMTxWmuGp1QLqlibVeNTsjnVPHSq8YnzKhi3leNTqhiqnOLSloxRfzZ9pNcn+rsqZJWIiZRLLjSIqQ6P6zk6pwiYhMHX1WeHxKdAV/E9dIUE7rF7nIGTHKOX0qo9jZxrwrI7iO4nONT5GKU9xnyrX7hzHzLze5L1NUlFwNuLoRUIj3MY5NsjDCeH1KhJDw96wueE+VxN/1Z2WV6+6tj6mLvWLrkRAEXU49H62zYzYVhtl7gmg1WeW2oQxFP5clAvKtWhxz0JcuMbFR+qVS/Ge4GUT9bc8RbXfNLh2dBCMUwtzE+Qx4Xw23INUd4aJ63x882RbH9Wp3lwMF6zfMelqvvSdiNoe86rQetOvdc/QEnP8Jd27TA0NfXesAVi/d6C2vXt/DLqO6afmK09+nuNTO255N8QzP/6lrZtnG91z3ZWUThmSZ22Wtp5bQ+1a7Z1B+qlPLK97pmqc0rZndC3/g/JKzq0Ydoae6VP9WQGtsLL6ezEG065YZz6bkO2DTZQ6ZoD0ZHfmrmfL3Ucpsl6HLdvTtaZhejvdTjG2UGyt+RAB3n1+ArXgepRV8Mb0id71Cl+nOx1hfDoLeJdpYMhQx6PdV6m+jHFK2a6+CknaVZ70+j3Y7OG2uVuUm3PedbjyHd0wM58C73wVrpLTbvfaJ0t1DbcbiepJcA1NDrS28OD2ongJHeNqGhX5tefaP8u/1Em7T6IzT13NMLSFm1uMJKy8OUj8iDYe/LDyEUTyu+Yf/SDyF8btRs2IP2MwjbetDqdBb8DMLWPsIaO4yPIGzvBa1RA/gRhB39vPudvk8g7OrJ3n8e/AmE6jUKXyts6XNsPoBQ1ro41e+36BmmH0Aouu+3cJbd43T6hG83FL2VX3XvEydP2H/PTI/FmDxh/11BPYvN1Anry4xjfGfX1AmFzp1dnfeuTZxQ7961zmK5aRPq3p3Xdf/hpAn17z/s6OE/acLmjjGG95BOmdDkHtJ2uz9hQrO7ZFvvA54wITO7D7jtsonpEpre6dx2o4c8+rNx5TcXar1dCthP2HK3unTHVvNrWdyt7oRb0ro9qMS2PXW3o3kF7OJjcom8I3upqz3H6VMIva7sns4GJLC7j2nV5G9rEjrzT0B0uy1YTxMZwrYqKPU1ielrk3MkLcAESPWlEPY2AtpNe6C6vb39+lsd/Uz5K6r+5oUazZygN7Jh1e6rGRE6y6kOVFcnb0KrIddEjUaPmTAhdDIxPfdGCL0MO82mavHkfFSRa5Z66LaNm21J+2cYS251SwW0G+OFv1OyGjzQrnQ0aP03IavBDW6uM2lumLFpTEbBTLJ4TQidb9sCJKj4xqijvRFh4aWS9QbQldBw1IYQOqt83DVV5qZ55qaEjr8e08Fx18aVAsaExYLjjfUZpWdRKGBB6IQJH2M2Cn6wKfe3ISyrOv/e/KuNXZmAHWFh/uXfDlVpXbFqS+j4B2yPjk556mBdi2RNWOw3AlyLjk4JHgwoiR9A6DinYECxvDafex5UpzOIsGBMXdrvKNx0YB3SQELH+folXHOkPA8uOB5MWPjj/yIS+yh4dAC0pAAQFuvqcgMfrJ67xXSEgRAWOiUc+CEF57COKSjCwpfbBwICWfzKeQ9px3QRjrDQbB6IgX6Ap0Qwh/ajgBI6ZYenJHItP6XgbpTs0YXUaMJSX8vfhTTroSc8LqNgSdHNh4KwVLxP0lxx2cspPMnVIj3sqXr5UBGW8r/2P+s0chUvSV8OBoq/CjKu3EW63u1jykYwlISVQj/O5sddEqSbbb6IWLTIt5s0SHbLeRb7uDWzTf8D+cCwE06sgCkAAAAASUVORK5CYII=" alt="Avelino Alves Filho" width="150">
+                                        <div class="nome">
+                                            Sandro Livramento
+                                        </div>
+                                        <div class="organizacao">
+                                            Não definido
+                                        </div>
+                                        <!-- <a class="btn btn-sm btn-primary mt-2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768963H2" target="_blank">
+                                            Lattes
+                                        </a> -->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
                 
