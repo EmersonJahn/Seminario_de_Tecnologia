@@ -20,3 +20,16 @@ $(() => {
   });
   
 });
+
+function inscreverNaPalestra(indice) {
+  
+  const itens = $("#container-dados .row.linha-principal");
+  
+  const nomeCurso = itens[indice].children[1].innerText;
+  const horarioCurso = itens[indice].children[2].innerText;
+  
+  adicionaAoCarrinho(nomeCurso + ' (' + dataPalestras + ' ' + horarioCurso + ')');
+  
+  location.href = 'formulario.html';
+  
+}

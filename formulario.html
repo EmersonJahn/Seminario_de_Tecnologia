@@ -10,6 +10,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/estilo.css">
     <link rel="stylesheet" href="/css/formulario.css">
+    <script src="./js/carrinho.js"></script>
+    <script src="./js/formulario.js"></script>
 </head>
 <body>
 
@@ -78,16 +80,10 @@
         </div>
 
         <div class="form-group">
-            <label for="palestras">Palestras</label>
-            <select class="form-control" id="palestras" multiple>
-            <option>1</option> <!-- TODO inserir os dados recebidos -->
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            </select>
+            <label for="palestras">Palestras selecionadas</label>
+            <ul id="palestras"></ul>
         </div>
-
+        
         <div class="container">
             <div class="row mt-5">
                 <input type="button" class="col btn btn-primary mr-sm-5" value="Voltar" onClick="history.go(-1)"> 

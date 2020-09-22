@@ -12,6 +12,14 @@ legend {
     color: red;
 }
 
+.item-palestra-selecionada {
+    margin-top: 10px;
+}
+
+.item-palestra-selecionada button {
+    margin-left: 7px;
+}
+
 @media (min-width: 1050px) {
 
     .formulario {

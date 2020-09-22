@@ -4,13 +4,14 @@ const carrinho = [];
 carregaCarrinho();
 
 
+function getCarrinho() {
+  return carrinho;
+}
 
 function adicionaAoCarrinho(string) {
   
-  for (const item of carrinho) {
-    if (item === string) {
-      return;
-    }
+  if (estaNoCarrinho(string)) {
+    return;
   }
   
   carrinho.push(string);
@@ -31,6 +32,17 @@ function removeDoCarrinho(string) {
   }
   
   salvaCarrinho();
+}
+
+function estaNoCarrinho(string) {
+  
+  for (const item of carrinho) {
+    if (item === string) {
+      return true;
+    }
+  }
+  
+  return false;
 }
 
 function salvaCarrinho() {
