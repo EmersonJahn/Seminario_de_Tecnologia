@@ -1,7 +1,7 @@
 # 8º Seminário de Tecnologia, Inovação e Desenvolvimento Social – VIII STIDS
 
 ### Site de divulgação do seminário.
-### Projeto desenvolvido para a disciplina de Programação de Aplicações Web I, da Universidade de Caxias do Sul (UCS).
+### Projeto desenvolvido para a disciplina de Programação de Aplicações Web I, da Universidade de Caxias do Sul (UCS), no semestre 04/2020.
 
 <br>
 <br>
