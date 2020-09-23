@@ -22,7 +22,7 @@ O site pode ser acessado através do link: https://emersonjahn.github.io/Seminar
 
 ### Preview
 
-<table>
+<table border=0>
     <tr>
         <td>
             <img src="./imagens/index.jpeg" alt="Index" width="400"/>
@@ -44,7 +44,7 @@ O site pode ser acessado através do link: https://emersonjahn.github.io/Seminar
 
 ### Autores
 
-<table>
+<table border=0>
 <tr>
 <td>
 <a href="https://github.com/EmersonJahn">
