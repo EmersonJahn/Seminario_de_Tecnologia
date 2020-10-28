@@ -6,10 +6,10 @@
 <br>
 <br>
 
-<!-- ### Para acessá-lo
+### Para acessá-lo
 O site pode ser acessado através do link: https://emersonjahn.github.io/Seminario_de_Tecnologia
 
-<br> -->
+<br>
 
 ### Tecnologias utilizadas
 - HTML 5
